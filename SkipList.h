@@ -4,6 +4,7 @@
 class SkipList {
 	struct Node {
 		int data;
+		int nu=0;
 		struct Node* previous;
 		struct Node* next;
 		struct Node* up;
@@ -14,6 +15,7 @@ class SkipList {
 
     public:
 
+	struct Node* getNextTop(struct Node* p);
 	void insert(int data);
 
 	
